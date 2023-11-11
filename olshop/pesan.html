@@ -8,11 +8,11 @@
 </head>
 <body>
 <div class="bg-secondary">
-  <h2 class="text-align-center judul">Pemesanan</h2>
-  <p class="judul">Mohon untuk melengkapi data berikut untuk melanjutkan pemesanan</p>
+  <h2 class="text-align-center text-white judul fw-bold">Pemesanan</h2>
+  <p class="judul fw-bold text-white">Mohon untuk melengkapi data berikut untuk melanjutkan pemesanan</p>
 
   <div class="container">
-    <form action="/action_page.php">
+    <form class="fw-bold" action="/action_page.php">
       <div class="row mt-4">
         <div class="col-25">
           <label for="fname">Nama</label>
@@ -47,12 +47,25 @@
         </div>
         <div class="row mt-4">
           <div class="col-25">
+            <label for="subject">Metode Pembayaran</label>
+          </div>
+          <div class="col-75">
+            <select>
+              <option value="gopay">Gopay</option>
+              <option value="BCA">Bank BCA</option>
+              <option value="mandiri">Bank Mandiri</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-25">
             <label for="subject">Alamat</label>
           </div>
           <div class="col-75">
             <textarea id="alamat" name="alamat" placeholder="alamat.." style="height:200px"></textarea>
           </div>
         </div>
+
       <div class="row mt-4 ">
           <button onClick="alert('Pembayaran Berhasil!')" type="submit" class="btn btn-primary">Submit</button>
           <!-- <script type="text/javascript">
